@@ -28,7 +28,7 @@ void HUD024::renderHUD(const shader_structs::AmbientLight& ambientLight, const s
 
     // Print information about point light properties
     printBuilder().print(10, 100, "Point light properties (all are same):");
-    printBuilder().print(10, 130, "   - count: {} (press 'R' to reset)", numPointLights);
+    printBuilder().print(10, 130, "   - count: {} (press Space to add one, 'R' to reset)", numPointLights);
     printBuilder().print(10, 160, "   - constant attenuation: {} (press '1' and '2' to change)", pointLight.constantAttenuation);
     printBuilder().print(10, 190, "   - linear attenuation: {} (press '3' and '4' to change)", pointLight.linearAttenuation);
     printBuilder().print(10, 220, "   - exponential attenuation: {} (press '5' and '6' to change)", pointLight.exponentialAttenuation);
